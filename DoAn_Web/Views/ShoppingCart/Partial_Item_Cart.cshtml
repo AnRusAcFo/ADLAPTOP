@@ -23,9 +23,9 @@
                 <td><img src="@item.ProductImg" width="60" /></td>
                 <td><a href="/chi-tiet/@item.ALias-p@(item.ProductId)">@item.ProductName</a></td>
                 <td>@item.CategoryName</td>
-                <td>@Common.FormatNumber(item.Price, 0) VND</td>
+                <td>@Common.FormatNumber(item.Price, 0)</td>
                 <td><input type="number" class="form-control" id="Quantity_@item.ProductId" value="@item.Quantity" /></td>
-                <th>@Common.FormatNumber(item.TotalPrice, 2) VND</th>
+                <th>@Common.FormatNumber(item.TotalPrice, 2)</th>
                 <td>
                     <a href="#" data-id="@item.ProductId" class="btn btn-sm btn-danger btnDelete">Xóa</a>
                     <a href="#" data-id="@item.ProductId" class="btn btn-sm btn-success btnUpdate">Cập nhật</a>
@@ -35,7 +35,7 @@
         }
         <tr>
             <th colspan="6" class="text-right">Tổng thiệt hại là : </th>
-            <th class="text-center">@Common.FormatNumber(tongtien, 0) VND</th>
+            <th class="text-center">@Common.FormatNumber(tongtien, 0)</th>
             <th></th>
         </tr>
 
